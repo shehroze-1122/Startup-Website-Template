@@ -1,0 +1,586 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+/* ************************  NAV-BAR and HEADER  ************************* */
+.navbar-brand{
+    display: contents;
+}
+.nav-link{
+    font-size: 18px ;
+}
+.nav-item{
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    padding: 8px;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 400px;
+    color: #606060;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size: 1.1rem;
+}
+
+
+
+#top-header{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../images/header.jpg');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%,100% 75%, 50% 100%, 0% 70%,0% 0%);
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+.header-title{
+    font-size: 45px;
+}
+.header-description{
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 16px 0 30px 0 ;
+    font-size: 1.1rem;
+}
+.header-buttons a{
+    border: 1.5px solid #fff;
+    margin: 0px 5px;
+    padding:10px 30px;
+    border-radius:100px;
+    outline: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.header-buttons a:hover{
+    background: #fff;
+    color:#000;
+}
+
+/* ********************************* FEATURES ********************************** */
+
+.project-features{
+    margin:100px 0;
+    width: 100%;
+    height:auto;
+    text-align: center;
+}
+.project-features i{
+    margin-bottom: 25px;
+}
+.feature{
+    background: #fff;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.feature i{
+    color:rgb(0, 255, 170)!important;
+}
+.feature h2,.service-description h2,.accomplishments h2,.pricing h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-spacing: 1px;
+    padding: 30px 0 0 0;
+}
+
+.feature:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/* ********************************   SERVICES   ******************************* */
+
+.services{
+    background: rgb(245, 244, 244);
+    padding:50px 0px;
+    margin: 100px 0px;
+}
+.services h2{
+    font-weight: bold;
+    padding:20px 20px 0px 0;
+    text-transform: uppercase;
+}
+.service-description p{
+    padding-left: 0px;
+}
+.services-title{
+    padding: 20px;
+}
+.services-title h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+
+}
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0, 255, 170)!important;
+}
+.services-progress h2{
+    margin-bottom: 20px;
+}
+.services-progress{
+    padding:50px;
+}
+.services-offers{
+    padding:50px;
+}
+.progress{
+    height: 0.9rem;
+}
+/* ********************************** Accomplishments ****************************** */
+
+.accomplishments{
+    margin: 100px 0px;
+    padding:50px 0px;
+    font-weight: bold;
+
+}
+.accomplishments h2{
+    font-size: 1.4rem;
+}
+.accomplishment-divs h1{
+    font-size: 2.5rem;
+}
+
+.accomplishment-divs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    padding: 10px;
+}
+
+.accomplishment-divs div{
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ********************************** PRICING ******************************** */
+.pricing{
+    margin:100px 0px !important;
+    padding: 40px 0px;
+    position: relative;
+    height: 100vh;
+}
+.pricing::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right:0%;
+    left: 0%;
+    z-index: -1;
+    background:rgb(63, 61, 61);
+    clip-path: polygon(100% 0%,100% 60%, 100% 25%, 0% 80%,0% 0%);
+}
+.pricing h2{
+    font-size: 1.4rem;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.card-css{
+    width: 100%;
+    height: 75vh;
+    background: #fff;
+    transition: 0.3s ease;
+}
+.card-css:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+.card-css:hover .card-footer a{
+    background: rgb(0, 255, 170);
+    color:#fff;
+}
+.card-css:hover .dollars{
+    color: rgb(0, 255, 170);
+}
+.card-css:hover .card-header{
+    color: rgb(0, 255, 170);
+}
+
+.main-card{
+    transform: translateY(-20px);
+}
+.main-card:hover{
+    transform: translateY(-40px);
+
+}
+.card-header{
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    font-weight: bold;
+    background: #fff;
+}
+.card-footer{
+    padding: 30px 0px;
+    background: #fff;
+}
+.card-body>ul>li{
+    padding: 3px 0px;
+}
+.dollars{
+    margin-right: 2px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.card-footer a{
+    border: 1.5px solid rgb(0, 255, 170);
+    margin: 0px 5px;
+    padding:10px 30px;
+    border-radius:100px;
+    outline: none;
+    color: rgb(0, 255, 170);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.2rem;
+    text-align: center;
+}
+.card-footer a:hover{
+    background: rgb(0, 255, 170);
+    color:#fff;
+}
+
+/* ***************************** CLIENT TESTIMONIALS ************************************ */
+.happy-clients{
+    width: 100%;
+    height: 60vh;
+    margin: 100px 0px 400px 0px;
+    padding: 40px 0px;
+}
+.carousal-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-indicators{
+    margin-bottom: -50px !important;
+
+}
+.carousel-indicators li{
+    background: rgb(0, 255, 170);
+}
+.carousel-indicators .active{
+    background: rgb(0, 185, 123);
+}
+.happy-clients h2{
+    font-size:1.4rem ;
+    font-weight: bold;
+}
+.happy-clients p{
+    margin-bottom: 45px;
+}
+
+.clients h2{
+    font-size: 18px;
+    text-align: center;
+}
+.clients p{
+    font-size: 13px;
+    text-align: center;
+}
+.card-img-top{
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+    border: 1px solid rgb(0, 255, 170);
+    border-radius: 50%;
+    margin: auto;
+}
+.pricing-card{
+    padding: 50px 0px 0px 0px;
+    box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.pricing-card:hover{
+    background: rgb(63, 61, 61);
+    color: #fff;
+}
+.pricing-card:hover p{
+    color: #fff;
+}
+.pricing-card:hover .clients h2{
+    color:rgb(0, 255, 170);
+}
+.quotation{
+    font-size: 32px;
+    color:rgb(63, 61, 61);
+}
+.pricing-card:hover .quotation{
+    color:rgb(0, 255, 170);
+}
+.carousel-control-next{
+    margin-right: -67px !important;
+}
+.carousel-control-prev{
+    margin-left: -67px !important;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content:'>';
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: rgb(0, 0,0);
+}
+
+/* *************************************** CONTACT US ************************************************  */
+
+.contact-us{
+    margin: 200px 0px !important;
+    padding: 40px 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contact-us::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right:0%;
+    left: 0%;
+    z-index: -1;
+    background:rgb(63, 61, 61);
+    clip-path: polygon(100% 0%,100% 100%, 0% 100%, 90% 0%,100% 0%);
+}
+.contact-heading{
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+.contact-heading h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.contact-heading p{
+    padding: 5px 15px;
+    color: #8d8d8d;
+    font-size: 0.9rem;
+}
+.submit-button{
+    margin-top: 27px;
+}
+.submit-button button{
+    border: 2px solid rgb(0, 255, 170);
+    margin: 0px 5px;
+    background: #fff;
+    padding:10px 30px;
+    border-radius:100px;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.2rem;
+    text-align: center;
+    box-shadow: 10px 0px 10px 0 rgba(0, 0, 0, 0.3);
+ 
+}
+.submit-button button:hover{
+    background: rgb(0, 255, 170);
+    color:#fff;
+}
+.form-group{
+    padding: 7px 0px;
+}
+/* **************************************** NEWSLETTER ******************************************** */
+.newsletter h2{
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+}
+.input-news{
+    border-radius: 100px 0px 0px 100px;
+    min-height: 45px;
+
+}
+.input-group-text{
+    background:rgb(63, 61, 61) !important;
+    color: #fff !important;
+    border-radius: 0px 100px 100px 0px;
+    min-height: 45px;
+    border:none;
+}
+.input-group-text:hover{
+    background: rgb(0, 255, 170) !important;
+    color: black !important;
+}
+
+/* *********************************************** FOOTER *********************************************************** --> */
+.footer-section{
+    background:rgb(63, 61, 61);
+    color: #fff;
+    margin-top: 70px;
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+.footer-div{
+    padding: 20px 0px;
+}
+.footer-section p{
+    color: #fff;
+    margin-top: 28px;
+    padding: 10px 0px;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.footer-section h3{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer-section li{
+    padding: 10px 0px !important;
+}
+.footer-section li a{
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.footer-section li:nth-child(1){
+    margin-top: 28px;
+}
+.footer-news{
+    border: 1px solid #fff !important;
+}
+
+.rights p{
+    margin-bottom: -15px;
+}
+
+#scroll-up{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    background: rgb(0, 255, 170);
+    padding: 12px;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+    z-index: 99;
+}
+#scroll-up:hover{
+    background:#000;
+    color:rgb(0, 255, 170);
+}
+
+/* ********************************** MEDIA QUERIES ******************************************************* */
+
+
+@media (max-width:992px){
+    #top-header{
+        height: 70vh;
+        clip-path: polygon(100% 0%,100% 100%, 50% 100%, 0% 100%,0% 0%);
+    }
+    .nav-link{
+       text-align: center !important;
+       padding: 4px !important;
+       font-size: 16px;
+    }
+    #navbarNav{
+        margin-bottom: 0px !important;
+    }
+    .header-title{
+        font-size: 30px;
+    }
+    .header-description{
+        letter-spacing: 1px;
+        color: #fff;
+        padding: 5px 0 10px 0 ;
+        font-size: 0.9rem;
+    }
+    .card-css{
+        height: auto;
+    }
+    .pricing,.happy-clients,.contact-us{
+        height: auto;
+    }
+    .main-card{
+        transform: translateY(0px);
+        margin: 20px 0px;
+    }
+    .contact-us{
+        margin-top: 0px !important;
+        margin-bottom: 40px;
+    }
+    .contact-us p{
+        padding: 0px 50px;
+    }
+    .happy-clients{
+        margin-bottom: 70px;
+    }
+    .footer-div:nth-child(2){
+        text-align: left !important;
+    }
+    .footer-div{
+        padding: 20px 20px;
+    }
+    .rights p{
+        padding: 5px 10px;
+    }
+
+}
+@media(max-width:467px){
+    .header-title{
+        font-size: 25px;
+    }
+    .header-description{
+        padding: 3px 0 8px 0 ;
+        font-size: 0.8rem;
+    }
+    /* .header-buttons a{
+
+        padding:7px 21px;
+        font-size: 0.7rem;
+    }
+    .nav-link{
+        text-align: center !important;
+        padding: 3px !important;
+        font-size: 12px;
+     } */
+
+}
