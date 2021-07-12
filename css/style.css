@@ -494,7 +494,7 @@ h2{
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 25px;
+    right:25px;
     background: rgb(0, 255, 170);
     padding: 12px;
     border-radius: 15px;
@@ -560,6 +560,14 @@ h2{
     }
     .rights p{
         padding: 5px 10px;
+    }
+    
+    #scroll-up{
+        display: none;
+        position: fixed;
+        bottom: 15px;
+        right: 8px;
+        padding: 5px 3px !important;
     }
 
 }
