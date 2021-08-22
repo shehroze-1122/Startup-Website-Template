@@ -40,7 +40,9 @@ h2{
 }
 
 
-
+.footer-div a:hover{
+    color: rgb(0, 255, 170) !important;
+}
 #top-header{
     background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url('../images/header.jpg');
     height: 100vh;
